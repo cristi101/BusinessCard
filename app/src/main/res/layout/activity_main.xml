@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="eu.baboi.cristian.businesscard.MainActivity"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true" >
+
+<RelativeLayout
+    style="@style/background">
+
+    <ImageView
+        android:id="@+id/id_logo"
+        style="@style/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/desc_logo"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignTop="@id/id_logo"
+        android:layout_alignLeft="@id/id_logo"
+        android:layout_alignRight="@id/id_logo"
+        android:layout_alignBottom="@id/id_logo"
+
+        android:padding="4dp"
+
+        android:gravity="center_horizontal|top"
+
+        android:text="Slatina Go Club"
+        android:textColor="@color/div_line_color"
+
+        android:shadowColor="#7F000000"
+        android:shadowDx="8"
+        android:shadowDy="8"
+        android:shadowRadius="4"
+
+        android:lines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeStepGranularity="2sp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/id_title"
+        style="@style/title"
+        android:layout_below="@id/id_logo"
+        android:contentDescription="@string/desc_logo"
+        android:text="@string/txt_contact"
+        android:textSize="@dimen/txt_size" />
+
+    <View
+        android:id="@+id/id_line"
+        style="@style/div_line"
+        android:layout_alignLeft="@id/id_title"
+        android:layout_alignRight="@id/id_title"
+        android:layout_below="@id/id_title" />
+
+    <ImageView
+        android:id="@+id/loc_ico"
+        style="@style/icon"
+        android:layout_alignBottom="@id/id_address"
+        android:contentDescription="@string/desc_loc"
+        app:srcCompat="@drawable/ic_place_black_24dp" />
+
+    <TextView
+        android:id="@+id/id_address"
+        style="@style/contact"
+        android:layout_below="@id/id_line"
+        android:layout_toRightOf="@id/loc_ico"
+        android:text="@string/txt_address" />
+
+    <ImageView
+        android:id="@+id/phone_ico"
+        style="@style/icon"
+        android:layout_below="@id/loc_ico"
+        android:contentDescription="@string/desc_phone"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+    <TextView
+        android:id="@+id/id_phone"
+        style="@style/contact"
+        android:layout_alignBottom="@id/phone_ico"
+        android:layout_alignLeft="@id/id_address"
+        android:autoLink="phone"
+        android:text="@string/txt_phone" />
+
+    <ImageView
+        android:id="@+id/web_ico"
+        style="@style/icon"
+        android:layout_below="@id/phone_ico"
+        android:contentDescription="@string/desc_web"
+        app:srcCompat="@drawable/ic_language_black_24dp" />
+
+    <TextView
+        android:id="@+id/id_web"
+        style="@style/contact"
+        android:layout_alignBottom="@id/web_ico"
+        android:layout_alignLeft="@id/id_address"
+        android:autoLink="web"
+        android:text="@string/txt_web" />
+
+    <TextView
+        android:id="@+id/id_desc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/id_title"
+        android:layout_below="@id/id_web"
+        android:layout_marginRight="@dimen/logo_margin"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:text="@string/txt_desc1"
+        android:breakStrategy="high_quality"
+        android:textColor="@color/addr_color" />
+
+    <TextView
+        android:id="@+id/id_desc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/id_title"
+        android:layout_below="@id/id_desc1"
+        android:layout_marginRight="@dimen/logo_margin"
+        android:layout_marginTop="@dimen/txt_margin"
+        android:text="@string/txt_desc2"
+        android:breakStrategy="high_quality"
+        android:textColor="@color/addr_color" />
+
+</RelativeLayout>
+</ScrollView>

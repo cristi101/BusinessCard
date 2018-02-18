@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Business Card</string>
+
+    <string name="desc_logo">Club logo</string>
+
+    <string name="desc_loc">Address</string>
+    <string name="desc_phone">Phone</string>
+    <string name="desc_web">Web address</string>
+
+    <string name="txt_contact">Contact us</string>
+    <string name="txt_address"><a href="https://www.google.com/maps/search/?api=1&amp;query=1%20Ecaterina%20Teodoroiu%20St%2C%20Slatina%2C%20OT%20230062">1 Ecaterina Teodoroiu St.\nSlatina, OT 230062</a></string>
+    <string name="txt_phone">(+4)0123-456-789</string>
+    <string name="txt_web">www.nowhere.ro</string>
+    <string name="txt_desc1">We are a non profit society for sharing and teaching the game of Go.</string>
+    <string name="txt_desc2">If you never played before, we are happy to teach you! The club charges no fees and it\'s easy to find.</string>
+
+</resources>
+

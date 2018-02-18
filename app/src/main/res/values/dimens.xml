@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="txt_margin">10dp</dimen>
+    <dimen name="logo_margin">20dp</dimen>
+
+    <dimen name="icon_size">30sp</dimen>
+    <dimen name="icon_gap">10dp</dimen>
+    <dimen name="contact_gap">2dp</dimen>
+    <dimen name="contact_size">15sp</dimen>
+
+    <dimen name="div_line_thick">2dp</dimen>
+    <dimen name="txt_size">40sp</dimen>
+</resources>

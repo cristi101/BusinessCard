@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorLink">@color/addr_color</item>
+    </style>
+
+    <style name="background">
+        <item name="android:background">@color/bkgd_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="logo">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitStart</item>
+        <item name="android:src">@drawable/logo</item>
+    </style>
+
+    <style name="title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/txt_margin</item>
+        <item name="android:layout_marginBottom">@dimen/txt_margin</item>
+        <item name="android:layout_marginLeft">@dimen/logo_margin</item>
+        <item name="android:layout_marginRight">@dimen/logo_margin</item>
+        <item name="android:textColor">@color/icon_color</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="icon">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_width">@dimen/icon_size</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignLeft">@id/id_title</item>
+        <item name="android:layout_marginTop">@dimen/contact_gap</item>
+        <item name="android:layout_marginRight">@dimen/icon_gap</item>
+    </style>
+
+    <style name="contact">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/contact_size</item>
+        <item name="android:textColor">@color/addr_color</item>>
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="div_line">
+        <item name="android:background">@color/div_line_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/div_line_thick</item>
+        <item name="android:layout_marginBottom">@dimen/txt_margin</item>
+    </style>
+
+</resources>
