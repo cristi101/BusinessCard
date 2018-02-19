@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="txt_margin">10dp</dimen>
-    <dimen name="logo_margin">20dp</dimen>
+    <!-- 36dp are the status bar 24dp plus the navigation bar 48dp in half -->
+    <dimen name="logo_margins">36dp</dimen>
 
-    <dimen name="icon_size">30sp</dimen>
-    <dimen name="icon_gap">10dp</dimen>
-    <dimen name="contact_gap">2dp</dimen>
+    <!-- This is the padding for the business name -->
+    <dimen name="name_padding">4dp</dimen>
+
+    <!-- This is the offset and radius for the business name shadow -->
+    <dimen name="shadow_offset" format="float" type="dimen">8</dimen>
+    <dimen name="shadow_radius" format="float" type="dimen">4</dimen>
+
+    <!-- This are the possible text sizes of the business name -->
+    <dimen name="min_size">10sp</dimen>
+    <dimen name="max_size">100sp</dimen>
+    <dimen name="step_size">1sp</dimen>
+
+    <!-- This is the size of the text for the contact section title -->
+    <dimen name="title_size">40sp</dimen>
+
+    <!-- This is the size of the text for the contact info -->
     <dimen name="contact_size">15sp</dimen>
 
+    <!-- This is the size of the text for the business info -->
+    <dimen name="info_size">15sp</dimen>
+
+    <!-- This is the left and right margin for the contact info -->
+    <dimen name="horizontal_margin">20dp</dimen>
+
+    <!-- This is the top margin for the title -->
+    <dimen name="title_margin">10dp</dimen>
+
+    <!-- The thickness of the contact info delimiter -->
     <dimen name="div_line_thick">2dp</dimen>
-    <dimen name="txt_size">40sp</dimen>
+
+    <!-- This is the space above and below the delimiter -->
+    <dimen name="div_line_margin">10dp</dimen>
+
+    <!-- This is the size of the contact icons -->
+    <dimen name="icon_size">30dp</dimen>
+
+    <!-- This is the space gap between the contact icons and the contact info -->
+    <dimen name="icon_gap">10dp</dimen>
+
+    <!-- This is the space gap between the contact lines -->
+    <dimen name="contact_gap">2dp</dimen>
+
+    <!-- This is the space above the business info -->
+    <dimen name="info_margin">10dp</dimen>
+
+    <!-- This is the space between paragraphs -->
+    <dimen name="para_margin">5dp</dimen>
 </resources>

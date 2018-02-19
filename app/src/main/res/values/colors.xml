@@ -4,12 +4,19 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="addr_color">@android:color/black</color>
+    <!-- This is the color of the screen background -->
     <color name="bkgd_color">@android:color/holo_orange_light</color>
 
-    <color name="div_line_color">@android:color/holo_red_dark</color>
-    <color name="addr_line_color">@android:color/holo_green_dark</color>
+    <!-- This is the color of the business name and contact info delimiter -->
+    <color name="name_color">@android:color/holo_red_dark</color>
 
+    <!-- This is the color of the business name shadow -->
+    <color name="shadow_color">#7F000000</color>
 
+    <!-- The color of the contact title and icons -->
     <color name="icon_color">@android:color/white</color>
+
+    <!-- The color of the contact info and business description  -->
+    <color name="contact_color">@android:color/black</color>
+
 </resources>

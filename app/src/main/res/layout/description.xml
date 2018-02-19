@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is the common part of the portrait and landscape layouts -->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eu.baboi.cristian.businesscard.MainActivity" >
+
+    <!-- This is the contact info delimiter  -->
+    <View
+        android:id="@+id/id_line"
+        style="@style/div_line"
+        android:layout_alignLeft="@id/id_title"
+        android:layout_alignRight="@id/id_title"
+        android:layout_below="@id/id_title" />
+
+    <!-- The contact info follow  -->
+
+    <!-- Location icon -->
+    <ImageView
+        android:id="@+id/loc_ico"
+        style="@style/icon"
+        android:layout_alignBottom="@id/id_address"
+        android:contentDescription="@string/desc_loc"
+        app:srcCompat="@drawable/ic_place_black_24dp" />
+
+    <!-- Postal address -->
+    <TextView
+        android:id="@+id/id_address"
+        style="@style/contact"
+        android:layout_below="@id/id_line"
+        android:layout_toRightOf="@id/loc_ico"
+        android:text="@string/txt_address" />
+
+    <!-- Phone icon -->
+    <ImageView
+        android:id="@+id/phone_ico"
+        style="@style/icon"
+        android:layout_below="@id/loc_ico"
+        android:contentDescription="@string/desc_phone"
+        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+    <!-- Phone number -->
+    <TextView
+        android:id="@+id/id_phone"
+        style="@style/contact"
+        android:layout_alignBottom="@id/phone_ico"
+        android:layout_alignLeft="@id/id_address"
+        android:autoLink="phone"
+        android:text="@string/txt_phone" />
+
+    <!-- Web icon -->
+    <ImageView
+        android:id="@+id/web_ico"
+        style="@style/icon"
+        android:layout_below="@id/phone_ico"
+        android:contentDescription="@string/desc_web"
+        app:srcCompat="@drawable/ic_language_black_24dp" />
+
+    <!-- Web address -->
+    <TextView
+        android:id="@+id/id_web"
+        style="@style/contact"
+        android:layout_alignBottom="@id/web_ico"
+        android:layout_alignLeft="@id/id_address"
+        android:autoLink="web"
+        android:text="@string/txt_web" />
+
+    <!-- The business description -->
+    <TextView
+        android:id="@+id/id_desc1"
+        style="@style/description"
+        android:layout_alignLeft="@id/id_title"
+        android:layout_alignRight="@id/id_title"
+        android:layout_below="@id/id_web"
+        android:layout_marginTop="@dimen/info_margin"
+        android:text="@string/txt_desc1" />
+
+    <TextView
+        android:id="@+id/id_desc2"
+        style="@style/description"
+        android:layout_alignLeft="@id/id_title"
+        android:layout_alignRight="@id/id_title"
+        android:layout_below="@id/id_desc1"
+        android:layout_marginTop="@dimen/para_margin"
+        android:text="@string/txt_desc2" />
+</merge>

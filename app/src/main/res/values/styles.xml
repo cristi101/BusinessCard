@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
@@ -7,34 +7,76 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
-        <item name="android:textColorLink">@color/addr_color</item>
     </style>
 
+    <!-- The style for the RelativeLayout -->
     <style name="background">
         <item name="android:background">@color/bkgd_color</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
     </style>
 
+    <!-- The style for the logo of the business -->
     <style name="logo">
         <item name="android:adjustViewBounds">true</item>
         <item name="android:scaleType">fitStart</item>
         <item name="android:src">@drawable/logo</item>
     </style>
 
+    <!-- The style for the name of the business -->
+    <style name="name">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <!-- This put the business name at the top of the Go board -->
+        <item name="android:gravity">center_horizontal|top</item>
+        <item name="android:padding">@dimen/name_padding</item>
+
+        <!-- The name of the business must be on one line only -->
+        <item name="android:lines">1</item>
+
+        <!-- This sets the shadow for the business name -->
+        <item name="android:shadowColor">@color/shadow_color</item>
+        <item name="android:shadowDx">@dimen/shadow_offset</item>
+        <item name="android:shadowDy">@dimen/shadow_offset</item>
+        <item name="android:shadowRadius">@dimen/shadow_radius</item>
+
+        <!-- This sets the business name and its color -->
+        <item name="android:text">@string/business_name</item>
+        <item name="android:textColor">@color/name_color</item>
+
+        <!-- This make the name resizable to adapt to the size of the Go board -->
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">@dimen/min_size</item>
+        <item name="autoSizeMaxTextSize">@dimen/max_size</item>
+        <item name="autoSizeStepGranularity">@dimen/step_size</item>
+    </style>
+
+    <!-- This is the style for the title of the contact section -->
     <style name="title">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/txt_margin</item>
-        <item name="android:layout_marginBottom">@dimen/txt_margin</item>
-        <item name="android:layout_marginLeft">@dimen/logo_margin</item>
-        <item name="android:layout_marginRight">@dimen/logo_margin</item>
+        <!-- the margins -->
+        <item name="android:layout_marginTop">@dimen/title_margin</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/horizontal_margin</item>
+        <!-- the content -->
+        <item name="android:text">@string/txt_title</item>
+        <item name="android:textSize">@dimen/title_size</item>
         <item name="android:textColor">@color/icon_color</item>
         <item name="android:textStyle">bold</item>
-
     </style>
 
+    <!-- This is the style for the contact info delimiter -->
+    <style name="div_line">
+        <item name="android:background">@color/name_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/div_line_thick</item>
+        <item name="android:layout_marginTop">@dimen/div_line_margin</item>
+        <item name="android:layout_marginBottom">@dimen/div_line_margin</item>
+    </style>
+
+    <!-- This is the style of the contact icons -->
     <style name="icon">
         <item name="android:adjustViewBounds">true</item>
         <item name="android:scaleType">centerCrop</item>
@@ -45,20 +87,27 @@
         <item name="android:layout_marginRight">@dimen/icon_gap</item>
     </style>
 
+    <!-- This is the style for contact info -->
     <style name="contact">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">@dimen/contact_size</item>
-        <item name="android:textColor">@color/addr_color</item>>
         <item name="android:textStyle">italic</item>
         <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/contact_color</item>>
+        <item name="android:textColorLink">@color/contact_color</item>
+        <item name="android:textColorHighlight">@color/colorAccent</item>
     </style>
 
-    <style name="div_line">
-        <item name="android:background">@color/div_line_color</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">@dimen/div_line_thick</item>
-        <item name="android:layout_marginBottom">@dimen/txt_margin</item>
+    <!-- This is the style for business description  -->
+    <style name="description">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/div_line_margin</item>
+        <item name="android:breakStrategy">high_quality</item>
+        <item name="android:textSize">@dimen/info_size</item>
+        <item name="android:textColor">@color/contact_color</item>
+        <item name="android:typeface">sans</item>
     </style>
 
 </resources>
