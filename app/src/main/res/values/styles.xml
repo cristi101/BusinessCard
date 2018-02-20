@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+<resources>
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
@@ -103,7 +103,6 @@
     <style name="description">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">@dimen/div_line_margin</item>
         <item name="android:breakStrategy">high_quality</item>
         <item name="android:textSize">@dimen/info_size</item>
         <item name="android:textColor">@color/contact_color</item>
